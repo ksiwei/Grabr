@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		96B007D32D4369A4AA3A4C85 /* libPods-Grabr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF242B6C2812679A4CDBCA5 /* libPods-Grabr.a */; };
+		B322AB1B1B1AD49D0014A0DD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B322AB1A1B1AD49D0014A0DD /* MapViewController.m */; };
+		B322AB1D1B1AD4D60014A0DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B322AB1C1B1AD4D60014A0DD /* MapKit.framework */; };
 		DD33849C1B1A7ABE004B14E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33849B1B1A7ABE004B14E8 /* main.m */; };
 		DD33849F1B1A7ABE004B14E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33849E1B1A7ABE004B14E8 /* AppDelegate.m */; };
-		DD3384A21B1A7ABE004B14E8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3384A11B1A7ABE004B14E8 /* FirstViewController.m */; };
 		DD3384A51B1A7ABE004B14E8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3384A41B1A7ABE004B14E8 /* SecondViewController.m */; };
 		DD3384A81B1A7ABE004B14E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3384A61B1A7ABE004B14E8 /* Main.storyboard */; };
 		DD3384AA1B1A7ABE004B14E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3384A91B1A7ABE004B14E8 /* Images.xcassets */; };
@@ -30,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		5C3BD25E66BD3D563D5F47B0 /* Pods-Grabr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grabr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grabr/Pods-Grabr.debug.xcconfig"; sourceTree = "<group>"; };
+		B322AB191B1AD49D0014A0DD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B322AB1A1B1AD49D0014A0DD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B322AB1C1B1AD4D60014A0DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEF242B6C2812679A4CDBCA5 /* libPods-Grabr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Grabr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1531F2F98EB9AB2981A4402 /* Pods-Grabr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grabr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grabr/Pods-Grabr.release.xcconfig"; sourceTree = "<group>"; };
 		DD3384961B1A7ABE004B14E8 /* Grabr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grabr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,8 +41,6 @@
 		DD33849B1B1A7ABE004B14E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD33849D1B1A7ABE004B14E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD33849E1B1A7ABE004B14E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD3384A01B1A7ABE004B14E8 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DD3384A11B1A7ABE004B14E8 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		DD3384A31B1A7ABE004B14E8 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DD3384A41B1A7ABE004B14E8 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DD3384A71B1A7ABE004B14E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B322AB1D1B1AD4D60014A0DD /* MapKit.framework in Frameworks */,
 				96B007D32D4369A4AA3A4C85 /* libPods-Grabr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,10 +94,10 @@
 		DD3384981B1A7ABE004B14E8 /* Grabr */ = {
 			isa = PBXGroup;
 			children = (
+				B322AB191B1AD49D0014A0DD /* MapViewController.h */,
+				B322AB1A1B1AD49D0014A0DD /* MapViewController.m */,
 				DD33849D1B1A7ABE004B14E8 /* AppDelegate.h */,
 				DD33849E1B1A7ABE004B14E8 /* AppDelegate.m */,
-				DD3384A01B1A7ABE004B14E8 /* FirstViewController.h */,
-				DD3384A11B1A7ABE004B14E8 /* FirstViewController.m */,
 				DD3384A31B1A7ABE004B14E8 /* SecondViewController.h */,
 				DD3384A41B1A7ABE004B14E8 /* SecondViewController.m */,
 				DD3384A61B1A7ABE004B14E8 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 		FBB9E7DA6548D204FD3CCDDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B322AB1C1B1AD4D60014A0DD /* MapKit.framework */,
 				CEF242B6C2812679A4CDBCA5 /* libPods-Grabr.a */,
 			);
 			name = Frameworks;
@@ -199,6 +203,7 @@
 				TargetAttributes = {
 					DD3384951B1A7ABE004B14E8 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 822FCFLMN8;
 					};
 					DD3384B11B1A7ABE004B14E8 = {
 						CreatedOnToolsVersion = 6.3;
@@ -285,7 +290,7 @@
 			files = (
 				DD3384A51B1A7ABE004B14E8 /* SecondViewController.m in Sources */,
 				DD33849F1B1A7ABE004B14E8 /* AppDelegate.m in Sources */,
-				DD3384A21B1A7ABE004B14E8 /* FirstViewController.m in Sources */,
+				B322AB1B1B1AD49D0014A0DD /* MapViewController.m in Sources */,
 				DD33849C1B1A7ABE004B14E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,9 +420,12 @@
 			baseConfigurationReference = 5C3BD25E66BD3D563D5F47B0 /* Pods-Grabr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Grabr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,9 +434,12 @@
 			baseConfigurationReference = D1531F2F98EB9AB2981A4402 /* Pods-Grabr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Grabr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
