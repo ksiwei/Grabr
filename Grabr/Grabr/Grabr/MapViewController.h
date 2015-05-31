@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MapViewController.h
 //  Grabr
 //
 //  Created by Kang, Siwei on 5/30/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MapViewController : UIViewController
 
 
 @end
