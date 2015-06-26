@@ -98,7 +98,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Grabr" id="IaZ-M2-PZI">
-                        <barButtonItem key="rightBarButtonItem" title="camera" id="eQf-qb-I2n"/>
+                        <barButtonItem key="rightBarButtonItem" title="camera" id="eQf-qb-I2n">
+                            <connections>
+                                <action selector="takePicture:" destination="Med-bU-xja" id="20W-ip-SFy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="itemMap" destination="kmP-Wh-RDl" id="1jc-67-q5Y"/>

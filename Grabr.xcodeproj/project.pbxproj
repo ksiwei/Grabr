@@ -10,6 +10,11 @@
 		96B007D32D4369A4AA3A4C85 /* libPods-Grabr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF242B6C2812679A4CDBCA5 /* libPods-Grabr.a */; };
 		B322AB1B1B1AD49D0014A0DD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B322AB1A1B1AD49D0014A0DD /* MapViewController.m */; };
 		B322AB1D1B1AD4D60014A0DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B322AB1C1B1AD4D60014A0DD /* MapKit.framework */; };
+		B322AB211B1AE3FA0014A0DD /* PostItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B322AB1F1B1AE3FA0014A0DD /* PostItemViewController.m */; };
+		B322AB221B1AE3FA0014A0DD /* PostItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B322AB201B1AE3FA0014A0DD /* PostItemViewController.xib */; };
+		B3B559DE1B3A6DAD00788BB9 /* GrabrAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B559DD1B3A6DAD00788BB9 /* GrabrAnnotationView.m */; };
+		B3B559E11B3A721300788BB9 /* GrabrAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B559E01B3A721300788BB9 /* GrabrAnnotation.m */; };
+		B3B559E41B3A72D700788BB9 /* GrabrItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B559E31B3A72D700788BB9 /* GrabrItem.m */; };
 		DD33849C1B1A7ABE004B14E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33849B1B1A7ABE004B14E8 /* main.m */; };
 		DD33849F1B1A7ABE004B14E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD33849E1B1A7ABE004B14E8 /* AppDelegate.m */; };
 		DD3384A51B1A7ABE004B14E8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3384A41B1A7ABE004B14E8 /* SecondViewController.m */; };
@@ -34,6 +39,15 @@
 		B322AB191B1AD49D0014A0DD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		B322AB1A1B1AD49D0014A0DD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B322AB1C1B1AD4D60014A0DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B322AB1E1B1AE3FA0014A0DD /* PostItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostItemViewController.h; sourceTree = "<group>"; };
+		B322AB1F1B1AE3FA0014A0DD /* PostItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostItemViewController.m; sourceTree = "<group>"; };
+		B322AB201B1AE3FA0014A0DD /* PostItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostItemViewController.xib; sourceTree = "<group>"; };
+		B3B559DC1B3A6DAD00788BB9 /* GrabrAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrabrAnnotationView.h; sourceTree = "<group>"; };
+		B3B559DD1B3A6DAD00788BB9 /* GrabrAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrabrAnnotationView.m; sourceTree = "<group>"; };
+		B3B559DF1B3A721300788BB9 /* GrabrAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrabrAnnotation.h; sourceTree = "<group>"; };
+		B3B559E01B3A721300788BB9 /* GrabrAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrabrAnnotation.m; sourceTree = "<group>"; };
+		B3B559E21B3A72D700788BB9 /* GrabrItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrabrItem.h; path = Grabr/GrabrItem.h; sourceTree = "<group>"; };
+		B3B559E31B3A72D700788BB9 /* GrabrItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrabrItem.m; path = Grabr/GrabrItem.m; sourceTree = "<group>"; };
 		CEF242B6C2812679A4CDBCA5 /* libPods-Grabr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Grabr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1531F2F98EB9AB2981A4402 /* Pods-Grabr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grabr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grabr/Pods-Grabr.release.xcconfig"; sourceTree = "<group>"; };
 		DD3384961B1A7ABE004B14E8 /* Grabr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grabr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +88,8 @@
 		DD33848D1B1A7ABE004B14E8 = {
 			isa = PBXGroup;
 			children = (
+				B3B559E21B3A72D700788BB9 /* GrabrItem.h */,
+				B3B559E31B3A72D700788BB9 /* GrabrItem.m */,
 				DD3384981B1A7ABE004B14E8 /* Grabr */,
 				DD3384B51B1A7ABE004B14E8 /* GrabrTests */,
 				DD3384971B1A7ABE004B14E8 /* Products */,
@@ -104,6 +120,13 @@
 				DD3384A91B1A7ABE004B14E8 /* Images.xcassets */,
 				DD3384AB1B1A7ABE004B14E8 /* LaunchScreen.xib */,
 				DD3384991B1A7ABE004B14E8 /* Supporting Files */,
+				B322AB1E1B1AE3FA0014A0DD /* PostItemViewController.h */,
+				B322AB1F1B1AE3FA0014A0DD /* PostItemViewController.m */,
+				B322AB201B1AE3FA0014A0DD /* PostItemViewController.xib */,
+				B3B559DC1B3A6DAD00788BB9 /* GrabrAnnotationView.h */,
+				B3B559DD1B3A6DAD00788BB9 /* GrabrAnnotationView.m */,
+				B3B559DF1B3A721300788BB9 /* GrabrAnnotation.h */,
+				B3B559E01B3A721300788BB9 /* GrabrAnnotation.m */,
 			);
 			path = Grabr;
 			sourceTree = "<group>";
@@ -238,6 +261,7 @@
 				DD3384A81B1A7ABE004B14E8 /* Main.storyboard in Resources */,
 				DD3384AD1B1A7ABE004B14E8 /* LaunchScreen.xib in Resources */,
 				DD3384AA1B1A7ABE004B14E8 /* Images.xcassets in Resources */,
+				B322AB221B1AE3FA0014A0DD /* PostItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B559DE1B3A6DAD00788BB9 /* GrabrAnnotationView.m in Sources */,
+				B322AB211B1AE3FA0014A0DD /* PostItemViewController.m in Sources */,
 				DD3384A51B1A7ABE004B14E8 /* SecondViewController.m in Sources */,
+				B3B559E41B3A72D700788BB9 /* GrabrItem.m in Sources */,
 				DD33849F1B1A7ABE004B14E8 /* AppDelegate.m in Sources */,
 				B322AB1B1B1AD49D0014A0DD /* MapViewController.m in Sources */,
+				B3B559E11B3A721300788BB9 /* GrabrAnnotation.m in Sources */,
 				DD33849C1B1A7ABE004B14E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
