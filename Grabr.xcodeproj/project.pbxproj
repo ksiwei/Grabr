@@ -16,6 +16,7 @@
 		B38A86B81B5790730055BBA0 /* GrabrLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B38A86B71B5790730055BBA0 /* GrabrLogo.png */; };
 		B38A86BC1B57960B0055BBA0 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = B38A86BB1B57960A0055BBA0 /* camera.png */; };
 		B38A86BE1B579AC00055BBA0 /* GrabrLogo_launch.png in Resources */ = {isa = PBXBuildFile; fileRef = B38A86BD1B579AC00055BBA0 /* GrabrLogo_launch.png */; };
+		B38A86C01B579E7F0055BBA0 /* appLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B38A86BF1B579E7F0055BBA0 /* appLogo.png */; };
 		B3B559DE1B3A6DAD00788BB9 /* GrabrAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B559DD1B3A6DAD00788BB9 /* GrabrAnnotationView.m */; };
 		B3B559E11B3A721300788BB9 /* GrabrAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B559E01B3A721300788BB9 /* GrabrAnnotation.m */; };
 		B3B559E41B3A72D700788BB9 /* GrabrItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B559E31B3A72D700788BB9 /* GrabrItem.m */; };
@@ -50,6 +51,7 @@
 		B38A86B71B5790730055BBA0 /* GrabrLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrabrLogo.png; sourceTree = "<group>"; };
 		B38A86BB1B57960A0055BBA0 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		B38A86BD1B579AC00055BBA0 /* GrabrLogo_launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrabrLogo_launch.png; sourceTree = "<group>"; };
+		B38A86BF1B579E7F0055BBA0 /* appLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLogo.png; sourceTree = "<group>"; };
 		B3B559DC1B3A6DAD00788BB9 /* GrabrAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrabrAnnotationView.h; sourceTree = "<group>"; };
 		B3B559DD1B3A6DAD00788BB9 /* GrabrAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrabrAnnotationView.m; sourceTree = "<group>"; };
 		B3B559DF1B3A721300788BB9 /* GrabrAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrabrAnnotation.h; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		DD3384981B1A7ABE004B14E8 /* Grabr */ = {
 			isa = PBXGroup;
 			children = (
+				B38A86BF1B579E7F0055BBA0 /* appLogo.png */,
 				B38A86BD1B579AC00055BBA0 /* GrabrLogo_launch.png */,
 				B38A86BB1B57960A0055BBA0 /* camera.png */,
 				B38A86B71B5790730055BBA0 /* GrabrLogo.png */,
@@ -274,6 +277,7 @@
 				DD3384A81B1A7ABE004B14E8 /* Main.storyboard in Resources */,
 				B38A86BC1B57960B0055BBA0 /* camera.png in Resources */,
 				B38A86B81B5790730055BBA0 /* GrabrLogo.png in Resources */,
+				B38A86C01B579E7F0055BBA0 /* appLogo.png in Resources */,
 				B38A86B61B578B5D0055BBA0 /* marker.png in Resources */,
 				DD3384AD1B1A7ABE004B14E8 /* LaunchScreen.xib in Resources */,
 				DD3384AA1B1A7ABE004B14E8 /* Images.xcassets in Resources */,

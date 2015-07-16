@@ -36,18 +36,19 @@
                                 <rect key="frame" x="22" y="28" width="80" height="25"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="ksv-we-Jqb">
-                                <rect key="frame" x="513" y="13" width="70" height="72"/>
+                                <rect key="frame" x="534" y="20" width="50" height="57"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ksv-we-Jqb" secondAttribute="trailing" constant="1" id="4PR-0H-dw9"/>
-                            <constraint firstItem="kmP-Wh-RDl" firstAttribute="top" secondItem="ksv-we-Jqb" secondAttribute="bottom" constant="-85" id="4T3-He-jTv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ksv-we-Jqb" secondAttribute="trailing" id="4PR-0H-dw9"/>
+                            <constraint firstItem="kmP-Wh-RDl" firstAttribute="top" secondItem="ksv-we-Jqb" secondAttribute="bottom" constant="-77" id="4T3-He-jTv"/>
                             <constraint firstItem="kmP-Wh-RDl" firstAttribute="height" secondItem="t4W-vR-UR7" secondAttribute="height" id="8UA-8s-nC6"/>
                             <constraint firstItem="kmP-Wh-RDl" firstAttribute="leading" secondItem="LMv-7u-fnH" secondAttribute="trailing" constant="-102" id="Cqr-Cg-mcU"/>
                             <constraint firstItem="kmP-Wh-RDl" firstAttribute="width" secondItem="t4W-vR-UR7" secondAttribute="width" id="U9H-Nc-Dz9"/>
                             <constraint firstItem="kmP-Wh-RDl" firstAttribute="top" secondItem="LMv-7u-fnH" secondAttribute="bottom" constant="-53" id="dr1-SL-eEU"/>
                             <constraint firstAttribute="centerY" secondItem="kmP-Wh-RDl" secondAttribute="centerY" id="jwm-0b-FpW"/>
+                            <constraint firstItem="LMv-7u-fnH" firstAttribute="top" secondItem="ksv-we-Jqb" secondAttribute="top" constant="8" id="yDK-rG-9h1"/>
                             <constraint firstAttribute="centerX" secondItem="kmP-Wh-RDl" secondAttribute="centerX" id="yzD-Eh-H0G"/>
                         </constraints>
                     </view>
@@ -71,6 +72,6 @@
     </scenes>
     <resources>
         <image name="GrabrLogo.png" width="80" height="25"/>
-        <image name="camera.png" width="70" height="72"/>
+        <image name="camera.png" width="50" height="51"/>
     </resources>
 </document>
