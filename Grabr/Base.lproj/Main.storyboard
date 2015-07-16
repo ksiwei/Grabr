@@ -1,66 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Med-bU-xja">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Second-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="360"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="az6-mu-etY">
-            <objects>
-                <navigationController id="2Cd-7S-nMf" userLabel="Map" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6eh-et-vIH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="91j-jB-wUx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Med-bU-xja" kind="relationship" relationship="rootViewController" id="9r1-Iq-YWT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ee9-o6-vrQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="13" y="1121"/>
-        </scene>
         <!--Grabr-->
         <scene sceneID="Ned-ha-RQp">
             <objects>
@@ -88,15 +32,26 @@
                                     </mask>
                                 </variation>
                             </mapView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="GrabrLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="LMv-7u-fnH">
+                                <rect key="frame" x="22" y="28" width="80" height="25"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="ksv-we-Jqb">
+                                <rect key="frame" x="513" y="13" width="70" height="72"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ksv-we-Jqb" secondAttribute="trailing" constant="1" id="4PR-0H-dw9"/>
+                            <constraint firstItem="kmP-Wh-RDl" firstAttribute="top" secondItem="ksv-we-Jqb" secondAttribute="bottom" constant="-85" id="4T3-He-jTv"/>
                             <constraint firstItem="kmP-Wh-RDl" firstAttribute="height" secondItem="t4W-vR-UR7" secondAttribute="height" id="8UA-8s-nC6"/>
+                            <constraint firstItem="kmP-Wh-RDl" firstAttribute="leading" secondItem="LMv-7u-fnH" secondAttribute="trailing" constant="-102" id="Cqr-Cg-mcU"/>
                             <constraint firstItem="kmP-Wh-RDl" firstAttribute="width" secondItem="t4W-vR-UR7" secondAttribute="width" id="U9H-Nc-Dz9"/>
+                            <constraint firstItem="kmP-Wh-RDl" firstAttribute="top" secondItem="LMv-7u-fnH" secondAttribute="bottom" constant="-53" id="dr1-SL-eEU"/>
                             <constraint firstAttribute="centerY" secondItem="kmP-Wh-RDl" secondAttribute="centerY" id="jwm-0b-FpW"/>
                             <constraint firstAttribute="centerX" secondItem="kmP-Wh-RDl" secondAttribute="centerX" id="yzD-Eh-H0G"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="KGQ-td-XLa"/>
                     <navigationItem key="navigationItem" title="Grabr" id="IaZ-M2-PZI">
                         <barButtonItem key="rightBarButtonItem" title="camera" id="eQf-qb-I2n">
                             <connections>
@@ -105,6 +60,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cameraButton" destination="ksv-we-Jqb" id="6n4-AL-OF1"/>
                         <outlet property="itemMap" destination="kmP-Wh-RDl" id="1jc-67-q5Y"/>
                     </connections>
                 </viewController>
@@ -112,27 +68,9 @@
             </objects>
             <point key="canvasLocation" x="762" y="1121"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <tabBarController storyboardIdentifier="Map" id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="2Cd-7S-nMf" kind="relationship" relationship="viewControllers" id="0PL-9n-7nm"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="GrabrLogo.png" width="80" height="25"/>
+        <image name="camera.png" width="70" height="72"/>
     </resources>
 </document>

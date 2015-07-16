@@ -13,8 +13,7 @@
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
 @property (nonatomic, strong) CLLocationManager *locationManager;
-
-- (IBAction)takePicture:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *cameraButton;
 
 
 @end

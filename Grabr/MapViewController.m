@@ -17,6 +17,9 @@ static NSString * const baseURL = @"https://crackling-fire-2973.firebaseio.com/l
 
 @interface MapViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *itemMap;
+@property (strong, nonatomic) CLLocation *currentLocation;
+@property (copy, nonatomic) NSArray *grabrItems;
+@property (copy, nonatomic) NSArray *sortedGrabrMarkers;
 
 @end
 
@@ -41,6 +44,10 @@ static NSString * const baseURL = @"https://crackling-fire-2973.firebaseio.com/l
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *tapRecog = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(takePicture:)];
+    [self.cameraButton addGestureRecognizer:tapRecog];
+    self.grabrItems = [NSArray array];
     //start listening for new items
     [self listenForItems];
     
@@ -59,21 +66,25 @@ static NSString * const baseURL = @"https://crackling-fire-2973.firebaseio.com/l
                 NSLog(@"Values :%@ , %@", snapshot.key, snapshot.value);
                 NSLog(@"lat : %@ lng : %@", snapshot.value[@"lat"], snapshot.value[@"lng"]);
                 
+                NSMutableArray *grabrCopy = [self.grabrItems mutableCopy];
                 GrabrItem *item = [[GrabrItem alloc] initWithDictionary:snapshot.value];
+                [grabrCopy addObject:item];
+                self.grabrItems = [grabrCopy copy];
+                
                 [self addMarker:item];
             }
     }];
 }
 
+#pragma mark target action
 
-- (IBAction)takePicture:(id)sender {
+- (void)takePicture:(UITapGestureRecognizer *)recognizer {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
     [self presentViewController:picker animated:YES completion:NULL];
-    
 }
 
 #pragma mark delegate imagePicker
@@ -101,9 +112,11 @@ static NSString * const baseURL = @"https://crackling-fire-2973.firebaseio.com/l
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation * currentLocation = (CLLocation *)[locations lastObject];
     NSLog(@"Location: %@", currentLocation);
-    //todo: zoom out until the region includes a marker
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(currentLocation.coordinate, 3000, 3000);
-    [self.itemMap setRegion:[self.itemMap regionThatFits:region] animated:YES];
+    if (self.currentLocation == nil || [currentLocation distanceFromLocation:self.currentLocation] > 20) {
+        self.currentLocation = currentLocation;
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(currentLocation.coordinate, 1000, 1000);
+        [self.itemMap setRegion:[self.itemMap regionThatFits:region] animated:YES];
+    }
 }
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
@@ -129,6 +142,7 @@ static NSString * const baseURL = @"https://crackling-fire-2973.firebaseio.com/l
     //TODO add image
     
     [self.itemMap addAnnotation:point];
+    
     
    // MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 800, 800);
    // [self.itemMap setRegion:[self.itemMap regionThatFits:region] animated:YES];
@@ -160,7 +174,7 @@ static NSString * const baseURL = @"https://crackling-fire-2973.firebaseio.com/l
         }
         
         annotationView.canShowCallout = NO;
-        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:grabrAnnotation.item.image]]];
+        UIImage *image = [UIImage imageNamed:@"marker.png"];
         annotationView.image = image;
         
         return annotationView;
